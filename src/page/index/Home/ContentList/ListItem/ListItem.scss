@@ -1,0 +1,107 @@
+.item-content {
+    display: flex;
+    // padding: .15rem 0;
+    // margin: 0 .1rem;
+    padding-top: .15rem;
+    padding-bottom: .15rem;
+    margin-left: .1rem;
+    margin-right: .1rem;
+    color: #656565;
+    &:after {
+        background-color: #e4e4e4;
+    }
+    .item-img {
+        width: .86rem;
+        height: .65rem;
+        border: .01rem solid #e4e4e4;
+    }
+    .item-info-content {
+        flex: 1;
+        margin-left: .07rem;
+    }
+    .brand {
+        position: absolute;
+        left: .01rem;
+        top: .16rem;
+        font-size: .12rem;
+        padding: .02rem;
+        color: #ffffff;
+        background-color:#ffa627;
+    }
+    .brand-xin {
+        background-color: #21c56c;
+    }
+    .item-title {
+        margin-top: .03rem;
+        font-size: .16rem;
+        color: #333;
+        font-weight: 500;
+    }
+    .item-desc {
+        margin-top: .13rem;
+        font-size: .12rem;
+    }
+    .star {
+        width: .1rem;
+        height: .1rem;
+        float: left;
+        background-size: cover;
+    }
+    .fullstar {
+        background-image: url('./img/fullstar.png');
+    }
+    .halfstar {
+        background-image: url('./img/halfstar.png')
+    }
+    .nullstar {
+        background-image: url('./img/gray-star.png')
+    }
+    .item-score {
+        float: left;
+    }
+    .item-count {
+        float: left;
+        margin-left: .05rem;
+
+    }
+    .item-time {
+        float: right;
+    }
+    .item-distance {
+        float: right;
+    }
+    .item-price {
+        margin-top: .1rem;
+        font-size: .12rem;
+        height: .24rem;
+    }
+    .item-meituan-flag{
+        float: right;
+        background-color: #ffd161;
+        color: black;
+        padding: .03rem;
+        border-radius: .03px;
+    }
+    .other-info{
+        color: #898989;
+        margin-top: .07rem;
+        font-size: .12rem;
+
+    }
+    .other-tag{
+        width: .14rem;
+        height: .14rem;
+        display: inline-block;
+    }
+    .other-content {
+        display: inline-block;
+        vertical-align: .03rem;
+        margin-left: .03rem;
+        height: .14rem;
+        width: 2.3rem;
+    }
+    .item-pre-price {
+        float: left;
+    }
+
+}

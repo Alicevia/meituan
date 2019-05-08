@@ -1,0 +1,20 @@
+.category-content {
+    .category-item{
+        float: left;
+        width: 25%;
+        padding-top: .14rem;
+        font-size: .13rem;
+        // text-align: center
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+
+
+    }
+    .item-icon {
+        width: .47rem;
+    }
+    .item-name {
+        margin-top: .1rem;
+    }
+}

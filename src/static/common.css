@@ -1,0 +1,33 @@
+html{
+    font-size: 100px;
+    min-width: 375px;
+    height: 667px;
+}
+
+.clearfix:after{
+    content: '';
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+}
+
+.scale-1px {
+    position: relative;
+    border: none;
+}
+.scale-1px:after{
+    content: '';
+    position: absolute;
+    height: .01rem;
+    width: 100%;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+    -webkit-transform-origin: 0,0;
+    transform-origin: 0,0;
+}
+.one-line {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
