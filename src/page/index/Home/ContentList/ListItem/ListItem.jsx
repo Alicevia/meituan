@@ -71,6 +71,12 @@ class ListItem extends Component {
    return data;
  }
 
+
+ goDetail(data){
+     window.location.href='/detail.html?id='+data.id;
+ }
+
+
  render() {
     let {pic_url,brand_type,name,
         wm_poi_score,month_sale_num,
@@ -79,7 +85,7 @@ class ListItem extends Component {
 
   return (
      
-      <div className='item-content scale-1px'>
+      <div onClick={()=>this.goDetail(this.props.itemData)} className='item-content scale-1px'>
         <img className='item-img' src={pic_url} alt=""/>
 
         {this.renderBrand(brand_type)}

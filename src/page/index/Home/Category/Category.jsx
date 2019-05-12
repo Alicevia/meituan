@@ -17,14 +17,16 @@ class Category extends Component {
 //         getHeaderData();
 //     }
 //  }
- 
+goCategory(){
+    window.location.href = './category.html';
+}
 
 renderItem=()=>{
     let {items} = this.props;
     items = items.slice(0,8);
     return items.map((item,index)=>{
         let {name,url} = item; 
-        return <div key={index} className='category-item'>
+        return <div onClick={this.goCategory} key={index} className='category-item'>
                 <img className='item-icon' src={url} alt=""/>
                 <p className='item-name'>{name}</p>
                 </div>

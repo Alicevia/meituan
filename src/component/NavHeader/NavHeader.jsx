@@ -10,7 +10,9 @@ class NavHeader extends Component {
  render() {
   return (
       <div className='nav'>
-        <div className="back-icon">
+        <div className="back-icon" onClick={()=>{
+          window.history.go(-1)
+        }}>
            
         </div>
         <h4 className="title">

@@ -4,7 +4,7 @@ import './Order.scss'
 import action from '../store/action';
 import ListItem from './ListItem/ListItem'
 import ScrollView from '../../../component/ScrollView/ScrollView'
-
+import NavHeader from '../../../component/NavHeader/NavHeader'
 class Order extends Component {
  constructor(props,context){
   super(props,context)

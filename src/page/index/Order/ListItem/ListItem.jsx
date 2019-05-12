@@ -43,11 +43,18 @@ class ListItem extends Component {
  renderComment(data){
     if (!data) {
         return <div className='evalutaion clearfix'>
-                <div className='evaluation-btn'>评价</div>
+                <div onClick={this.goEval} className='evaluation-btn'>评价</div>
         </div>
     } 
  }
+ goEval(){
+    window.location.href='/evaluation.html'
+ }
 
+ goDetail(){
+    window.location.href = '/detail.html';
+
+ }
 
  render() {
      let {poi_pic,poi_name,status_description,product_list,total,is_comment} = this.props.itemData;
@@ -56,7 +63,7 @@ class ListItem extends Component {
         <div className="order-item-inner">
             <img src={poi_pic} alt="" className="item-img"/>
             <div className="item-right">
-                <div className="item-top">
+                <div className="item-top" onClick={this.goDetail}>
                     <p className="order-name one-line">{poi_name}</p>
                     <div className="arrow"></div>
                     <div className="order-state">{status_description}</div>
