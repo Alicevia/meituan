@@ -1,0 +1,59 @@
+.comment-score {
+    display: flex;
+    padding: .15rem .25rem;
+    border-top: .1rem solid #f6f6f6;
+    border-bottom: .01rem solid #d5d5d5;
+    .mail-score-content{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .other-score-content{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        justify-content: space-around;
+    }
+    .taste-star-wrap, .package-star-wrap{
+        margin-left: .15rem;
+        margin-right: .15rem;
+    }
+    .package-score, .taste-score {
+        display: flex;
+        justify-content: center
+    }
+    .mail-score {
+        font-size: .32rem;
+        color: #ffb000;
+        margin-bottom: .05rem;
+    }
+    .mail-text {
+        font-size: .12rem;
+        color: #656565;
+    }
+    .taste-text, .package-text {
+        font-size: .12rem;
+        color: #554343;
+
+    }
+    .taste-score-text, .package-score-text {
+        font-size: .15rem;
+        color: #ffb000;
+    }
+    
+    .send-score-content{
+        display: flex;
+        flex-direction: column;
+        margin-top: .03rem;
+    }
+    .send-score {
+        font-size: .24rem;
+        color: #999;
+        margin-block-end: .05rem;
+        text-align: center;
+    }
+    .send-text {
+        font-size: .12rem;
+        color: #999;
+    }
+}

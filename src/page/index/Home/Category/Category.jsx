@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux'
-import action from '../../../../store/action';
+import action from '../../store/action';
 import './Category.scss'
 
 

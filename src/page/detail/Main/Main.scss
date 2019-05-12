@@ -1,0 +1,32 @@
+.detail {
+    .tab-bar {
+        font-size: .16rem;
+        display: flex;
+        border-bottom: .01rem solid #f0f0f0;
+        margin-top: .64rem;
+        .tab-item {
+            height: .45rem;
+            line-height: .45rem;
+            flex: 1;
+            position: relative;
+            color: #666;
+            text-align: center;
+            text-decoration: none;
+            &.active {
+                &:after{
+                    content: '';
+                    display: block;
+                    height: .04rem;
+                    width: .6rem;
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    -webkit-transform: translateX(-50%);
+                    background-color: #ffd161;
+                }
+            }
+
+        }
+    }
+}

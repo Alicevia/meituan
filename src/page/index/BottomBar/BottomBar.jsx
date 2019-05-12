@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import {connect} from 'react-redux'
 import {NavLink,withRouter} from 'react-router-dom'
 import './BottomBar.scss'
-import action from '../../../store/action';
+import action from '../store/action';
 class BottomBar extends Component {
  constructor(props,context){
   super(props,context)

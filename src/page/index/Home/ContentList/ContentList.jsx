@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux'
-import action from '../../../../store/action';
+import action from '../../store/action';
 import './ContentList.scss'
 import ListItem from './ListItem/ListItem'
 import ScrollView from '../../../../component/ScrollView/ScrollView'

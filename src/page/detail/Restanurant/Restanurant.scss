@@ -1,0 +1,73 @@
+.restanurant{
+    .restanurant-basic {
+        border-top: .1rem solid #f6f6f6;
+        padding: .1rem;
+        li {
+            position: relative;
+            font-size: .15rem;
+            padding-top: .15rem;
+            padding-bottom: .15rem;
+            padding-left: .4rem;
+            border-bottom: .01rem solid #f0f0f0;
+            &:last-child{
+                border: none;
+            }
+            &:after {
+                content: '';
+                width: .25rem;
+                height: .25rem;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        .phone:after {
+            background-image: url('./img/tel.png');
+            background-size: cover;
+        }
+        .address {
+          display: flex;
+          div:nth-child(2) {
+              flex: 1;
+          }
+        }
+        .address:after {
+            background-image: url('./img/address.png');
+            background-size: cover;
+       
+
+        }
+        .time:after {
+            background-image: url('./img/time.png');
+            background-size: cover;
+
+        }
+        .server:after {
+            background-image: url('./img/info.png');
+            background-size: cover;
+
+        }
+        .meituan-send{
+            background-color: #ffd161;
+            color: #333;
+            font-size: .1rem;
+            padding: .02rem;
+            border-radius: .04rem;
+            margin-right: .04rem;
+        }
+        .pay{
+            border-bottom: .01rem solid #f0f0f0 !important;
+            .icon {
+                width: .25rem;
+                height: .25rem;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    
+    }
+
+}

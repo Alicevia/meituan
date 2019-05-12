@@ -14,6 +14,7 @@ class ScrollView extends Component {
             }
         }
         
+        
     }
     componentWillMount(){
         window.addEventListener('scroll',this.onLoadPage.bind(this));
